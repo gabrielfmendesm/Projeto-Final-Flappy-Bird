@@ -21,7 +21,9 @@ Como baixar os arquivos do jogo:
 
 5 - Assim que a tela do jogo abrir, tudo estará pronto para jogar.
 
-Instruções do Jogo: O objetivo principal em Flappy Bird é clicar com o botão do mouse para guiar o personagem por entre os canos que aparecerem. A cada clicada, o personagem voa para cima elevendo a sua altura e possibilidando a passagem pelos canos, caso o jogador não clique no mouse, o personagem irá parar de voar e começar a cair. Caso o personagem toque em qualquer parte do cano, falhando em passar pelo meio, o jogador perderá o controle do personagem e uma tela de Game Over aparecerá. Além das instruções básicas, existem algumas regras:
+Instruções do Jogo: O objetivo principal em Flappy Bird é clicar com o botão do mouse para guiar o personagem por entre os canos que aparecerem. A cada clicada, o personagem voa para cima elevendo a sua altura e possibilitando a passagem pelo meio dos canos, caso o jogador não clique no mouse, o personagem irá parar de voar e começará a cair. Além das instruções básicas, existem algumas regras:
+
+- Caso o personagem toque em qualquer parte dos canos, falhando em passar pelo meio, o jogador perderá o controle do personagem e uma tela de Game Over aparecerá;
 
 - O jogador precisa evitar fazer com que o personagem (passáro) toque no chão ou na parte superior da tela, caso isso ocorrá o jogador também perderá o controle do personagem e o jogo será perdido;
 
