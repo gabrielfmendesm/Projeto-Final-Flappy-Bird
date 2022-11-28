@@ -105,5 +105,4 @@ class Placar:
 # Variáveis dos objetos e sprites
 grupo_canos = sprite.Group()
 bird = Bird(window)
-
-
+imagem_placar = Placar(WIDTH // 2, 50, window)
