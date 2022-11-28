@@ -20,4 +20,9 @@ while rodando:
     window.blit (fundo, (0,0))
     if tela_de_inicio:
         velocidade = 0
-        
+        bird.movimento_asa ()
+
+
+
+# ===== Finalização =====
+quit()
