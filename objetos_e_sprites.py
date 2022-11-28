@@ -16,8 +16,9 @@ class Bird:
 			self.lista.append(img)
 		
 		self.reset()
-		
-	def update(self): # gravidade e movimento do jogador (bird)
+
+	# Gravidade e movimento do jogador (bird)
+	def update(self):
 		# gravidade
 		self.velocidade += 0.3
 		if self.velocidade >= 8:
@@ -80,19 +81,17 @@ class Bird:
 
 # Classe que representa o placar (contador de pontos)
 class Placar:
-
-	# posições das imagens
 	def __init__(self, x, y, window):
 		self.lista_placar = []
 		for placar in range(10):
-			img = image.load(f'Assets/placar/{placar}.png')
+			img = image.load(f'Assets/Placar/{placar}.png')
 			self.lista_placar.append(img)
 			self.x = x
 			self.y = y
 
 		self.window = window
 		
-	# atualização do placar
+	# Atualização do placar
 	def update(self, placar):
 		placar = str(placar)
 		for frame, num in enumerate(placar):
