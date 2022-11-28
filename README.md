@@ -25,7 +25,7 @@ Instruções do Jogo: O objetivo principal em Flappy Bird é clicar com o botão
 
 - O jogador precisa evitar fazer com que o personagem (passáro) toque no chão ou na parte superior da tela, caso isso ocorrá o jogador também perderá o controle do personagem e o jogo será perdido;
 
-- A pontuação só será contada caso o jogador passe com o personagem entre os canos (sendo a única maneira dele se manter vivo), caso contrário ele perderá  o jogo;
+- A pontuação só será contada caso o jogador passe com o personagem entre os canos (sendo a única maneira dele se manter vivo), caso contrário ele perderá o jogo;
     
 - A cada passada por entre os canos, a pontuação do jogador aumenta e ao final de cada jogada, a jogada com maior pontuação fica guardada para outros tentarem bate-la.
 
