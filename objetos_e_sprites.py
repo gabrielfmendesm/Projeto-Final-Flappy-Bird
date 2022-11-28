@@ -4,8 +4,7 @@ from config import *
 from assets import *
 
 class Bird: # personagem 
-
-    def init(self, window):
+    def __init__(self, window):
         self.window = window
         self.lista = []
 
