@@ -7,3 +7,6 @@ FPS = 60 # Frames por segundo
 RED = (255, 0, 0)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
+
+# Variáveis
+altura_tela = 0.8 * HEIGHT
