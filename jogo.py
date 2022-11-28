@@ -4,7 +4,7 @@ from pygame import *
 from random import *
 from config import *
 from assets import *
-from funcoes import *
+from objetos_e_sprites import *
 
 
 init()
