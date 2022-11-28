@@ -2,6 +2,7 @@ from pygame import *
 from random import *
 from config import *
 from assets import *
+from jogo import *
 
 # Classe que representa o jogador (bird)
 class Bird: 
@@ -75,3 +76,10 @@ class Bird:
 		self.meio_tela = altura_tela // 2
 		self.posicao_asa = 0
 		self.inclinacao_asa = 1
+	
+
+
+
+# Variáveis dos objetos e sprites
+grupo_canos = sprite.Group()
+bird = Bird(window)
