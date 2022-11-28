@@ -19,6 +19,7 @@ flappy_bird = image.load('Assets/flappybird.png')
 flappy_bird = transform.scale(flappy_bird, (200,80))
 
 # ----- Sons e efeitos sonoros
+mixer.init()
 som_gameover = mixer.Sound('Sounds/som_gameover.wav')
 som_impacto = mixer.Sound('Sounds/som_impacto.wav')
 som_acerto = mixer.Sound('Sounds/som_acerto.wav')
