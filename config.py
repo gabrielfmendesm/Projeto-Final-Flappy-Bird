@@ -1,8 +1,3 @@
-from pygame import *
-from random import *
-from objetos_e_sprites import *
-from jogo import *
-
 # Dados gerais do jogo.
 WIDTH = 288 # Largura da tela
 HEIGHT = 512 # Altura da tela
@@ -23,7 +18,3 @@ pontuacao = 0
 tela_de_inicio = True
 acerto_cano = False
 frequencia_cano = 1600 # frequência em milissegundos do aparecimento dos canos
-
-# Objetos e Sprites (variáveis)
-grupo_cano = sprite.Group()
-bird = Bird (window)
