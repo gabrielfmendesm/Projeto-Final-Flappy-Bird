@@ -32,3 +32,6 @@ Instruções do Jogo: O objetivo principal em Flappy Bird é clicar com o botão
 - A cada passada por entre os canos, a pontuação do jogador aumenta e ao final de cada jogada, a jogada com maior pontuação fica guardada para outros tentarem bate-la.
 
  Vídeo de Demonstração do Jogo: 
+
+ Referências do jogo: Utilizamos as imagens, sprites e áudios do seguinte repositório a baixo no jogo.
+ Link do Repositório GitHub: https://github.com/samuelcust/flappy-bird-assets.
