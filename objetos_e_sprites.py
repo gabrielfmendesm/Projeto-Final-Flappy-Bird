@@ -78,10 +78,33 @@ class Bird:
 		self.posicao_asa = 0
 		self.inclinacao_asa = 1
 
+# Classe que representa o placar (contador de pontos)
+class Placar:
+
+	# posições das imagens
+	def __init__(self, x, y, window):
+		self.lista_placar = []
+		for placar in range(10):
+			img = image.load(f'Assets/placar/{placar}.png')
+			self.lista_placar.append(img)
+			self.x = x
+			self.y = y
+
+		self.window = window
+		
+	# atualização do placar
+	def update(self, placar):
+		placar = str(placar)
+		for frame, num in enumerate(placar):
+			self.image = self.lista_placar[int(num)]
+			self.rect = self.image.get_rect()
+			self.rect.topleft = self.x - 15 * len(placar) + 30 * frame, self.y
+			self.window.blit(self.image, self.rect)
 
 
 
 # Variáveis dos objetos e sprites
 grupo_canos = sprite.Group()
 bird = Bird(window)
+
 
