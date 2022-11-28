@@ -34,4 +34,5 @@ Instruções do Jogo: O objetivo principal em Flappy Bird é clicar com o botão
  Vídeo de Demonstração do Jogo: 
 
  Referências do jogo: Utilizamos as imagens, sprites e áudios do seguinte repositório a baixo no jogo.
+ 
  Link do Repositório GitHub: https://github.com/samuelcust/flappy-bird-assets.
