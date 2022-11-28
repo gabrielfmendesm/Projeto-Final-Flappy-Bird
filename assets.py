@@ -24,4 +24,3 @@ som_impacto = mixer.Sound('Sounds/som_impacto.wav')
 som_acerto = mixer.Sound('Sounds/som_acerto.wav')
 som_asa = mixer.Sound('Sounds/som_asa.wav')
 efeito_sonoro = mixer.Sound('Sounds/efeito_sonoro.wav')
-
