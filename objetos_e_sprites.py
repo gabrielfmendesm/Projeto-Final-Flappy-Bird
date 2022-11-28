@@ -2,7 +2,8 @@ from pygame import *
 from random import *
 from config import *
 from assets import *
-from jogo import *
+from jogo import window
+
 
 # Classe que representa o jogador (bird)
 class Bird: 
