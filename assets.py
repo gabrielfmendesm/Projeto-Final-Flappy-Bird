@@ -18,5 +18,10 @@ gameover = image.load('Assets/gameover.png')
 flappy_bird = image.load('Assets/flappybird.png')
 flappy_bird = transform.scale(flappy_bird, (200,80))
 
-# ----- Sons
+# ----- Sons e efeitos sonoros
+som_gameover = mixer.Sound('Sounds/som_gameover.wav')
+som_impacto = mixer.Sound('Sounds/som_impacto.wav')
+som_acerto = mixer.Sound('Sounds/som_acerto.wav')
+som_asa = mixer.Sound('Sounds/som_asa.wav')
+efeito_sonoro = mixer.Sound('Sounds/efeito_sonoro.wav')
 
