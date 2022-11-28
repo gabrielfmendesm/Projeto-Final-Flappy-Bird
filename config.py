@@ -15,6 +15,7 @@ inicio_jogo = False
 fim_jogo = False
 reiniciar = False
 pontuacao = 0
+pontuacao_recorde = 0
 tela_de_inicio = True
 acerto_cano = False
 frequencia_cano = 1600 # frequência em milissegundos do aparecimento dos canos
