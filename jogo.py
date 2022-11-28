@@ -3,6 +3,8 @@
 from pygame import *
 from random import *
 from config import *
+from assets import *
+from funcoes import *
 
 
 init()
@@ -12,3 +14,10 @@ mixer.init()
 window = display.set_mode((WIDTH, HEIGHT))
 display.set_caption('Flappy Bird')
 
+# ----- Código principal
+rodando = True
+while rodando:
+    window.blit (fundo, (0,0))
+    if tela_de_inicio:
+        velocidade = 0
+        
