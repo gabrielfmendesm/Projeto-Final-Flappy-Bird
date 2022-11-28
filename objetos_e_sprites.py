@@ -15,7 +15,7 @@ class Bird: # personagem
         self.reset()
 
 	def update(self): # gravidade e movimento do bird
-        
+
         # gravidade ------------------------------------
 		self.velocidade += 0.3
 		if self.velvocidade >= 8:
