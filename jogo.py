@@ -13,6 +13,9 @@ mixer.init()
 # ----- Gera tela principal
 window = display.set_mode((WIDTH, HEIGHT))
 display.set_caption('Flappy Bird')
+# Simbolo PyGame
+programIcon = image.load('Assets/icone.jpg')
+display.set_icon(programIcon)
 
 # ----- Código principal
 rodando = True
