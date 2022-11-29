@@ -2,11 +2,13 @@
 
 O PyGame foi um projeto proposto pelos professores e coordenadores da disciplina "Design de Software" do curso de Engenharia do Instituto de Ensino e Pesquisa (Insper). O projeto consiste na criação e desenvolvimento de um jogo escolhido pelos desenvolvedores escrito totalmente na linguagem Python, o projeto teve um desenvolvimento que durou aproximadamente 3 semanas e o jogo conta com aspectos comumente encontrados nos jogos atualmente, como: efeitos sonoros, jogabilidade fluida e desafiadora.
 
-Desenvolvedores: Gabriel Fernando Missaka Mendes e Luigi Zema Matizonkas
-
 Nome do Jogo: Flappy Bird
 
-Como se joga: No jogo, o jogador deverá clicar com o botão do mouse para fazer com que o personagem (que é um passáro) passe por entre os canos que aparecerão durante o jogo, fazendo de tudo para não bater neles. 
+Desenvolvedores: Gabriel Fernando Missaka Mendes e Luigi Zema Matizonkas
+
+## Como se joga
+
+No jogo, o jogador deverá clicar com o botão do mouse para fazer com que o personagem (que é um passáro) passe por entre os canos que aparecerão durante o jogo, tomando cuidado para não bater neles. 
 
 ## Como Baixar o Jogo
 
@@ -23,7 +25,7 @@ Como se joga: No jogo, o jogador deverá clicar com o botão do mouse para fazer
 ## Requisitos
 
 É necessário instalar o seguinte pacote no Python:
-* Pygame
+* PyGame
 
 Para instalar esse pacote no Python, digite o seguinte comando no terminal do seu IDE:
 
