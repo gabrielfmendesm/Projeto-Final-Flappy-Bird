@@ -100,7 +100,28 @@ class Placar:
 			self.rect.topleft = self.x - 15 * len(placar) + 30 * frame, self.y
 			self.window.blit(self.image, self.rect)
 
+# Classe que representa os canos (obstaculos)
+class Cano(sprite.Sprite):
+	def __init__(self, window, image, y, posicao):
+		super(Cano, self).__init__()
+		
+		self.window = window
+		self.image = image
+		self.rect = self.image.get_rect()
+		gap_cano = 100 // 2
+		x = WIDTH
 
+		if posicao == 1:
+			self.image = transform.flip(self.image, False, True)
+			self.rect.bottomleft = (x, y - gap_cano)
+		elif posicao == -1:
+			self.rect.topleft = (x, y + gap_cano)
+
+	def update(self, velocidade):
+		self.rect.x -= velocidade
+		if self.rect.right < 0:
+			self.morto()
+		self.window.blit(self.image,  self.rect)
 
 # Variáveis dos objetos e sprites
 grupo_canos = sprite.Group()
