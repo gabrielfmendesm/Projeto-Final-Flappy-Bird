@@ -73,6 +73,29 @@ while rodando:
 					pontuacao += 1
 					som_acerto.play()
 
+	if not bird.vivo:
+		window.blit(gameover, (50,200))
+		
+	for event in event.get():
+		if event.type == QUIT:
+			running = False
+		if event.type == KEYDOWN:
+			if event.key == K_ESCAPE or \
+				event.key == K_q:
+				running = False
+		if event.type == MOUSEBUTTONDOWN:
+			if tela_inicio_jogo:
+				inicio_jogo = True
+				velocidade = 2
+				tela_inicio_jogo = False
+
+				game_over = False
+				ultimo_cano = time.get_ticks() - frequencia_cano
+				proximo_cano = 0
+				grupo_canos.empty()
+				
+				velocidade = 2
+				pontuacao = 0
 
 
 # ===== Finalização =====
