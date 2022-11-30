@@ -33,7 +33,7 @@ class Bird:
 			if mouse.get_pressed()[0] == 1 and not self.pulo:
 				som_asa.play()
 				self.pulo = True
-				self.velocidade = -5
+				self.velocidade = -6
 			if mouse.get_pressed()[0] == 0:
 				self.pulo = False
 			
