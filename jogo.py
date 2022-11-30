@@ -56,7 +56,7 @@ while rodando:
 				som_impacto.play()
 				som_gameover.play()
 			bird.vivo = False
-			bird.theta = bird.vel * -2
+			bird.theta = bird.velocidade * -2
 	
 		if bird.rect.bottom >= altura_tela:
 			velocidade = 0
