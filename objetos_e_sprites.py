@@ -1,8 +1,10 @@
 from pygame import *
 from random import *
-from config import *
 from assets import *
-from jogo import window
+from config import *
+
+# Informação da tela
+window = display.set_mode((WIDTH, HEIGHT))
 
 
 # Classe que representa o jogador (bird)
