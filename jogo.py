@@ -12,7 +12,9 @@ mixer.init()
 
 # ----- Gera tela principal
 window = display.set_mode((WIDTH, HEIGHT))
+clock = time.Clock()
 display.set_caption('Flappy Bird')
+
 # Simbolo PyGame
 programIcon = image.load('Assets/icone.jpg')
 display.set_icon(programIcon)
@@ -97,6 +99,15 @@ while rodando:
 				velocidade = 2
 				pontuacao = 0
 
+			if fim_jogo:
+				tela_de_inicio = True
+				bird = Bird(window)
+				cano = choice([cano1, cano2])
+				fundo = choice([fundo1, fundo2])
 
+
+
+	clock.tick(FPS)
+	display.update()
 # ===== Finalização =====
 quit()
