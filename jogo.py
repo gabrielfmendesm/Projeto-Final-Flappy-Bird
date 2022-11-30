@@ -57,7 +57,7 @@ while rodando:
 				som_impacto.play()
 				som_gameover.play()
 			bird.vivo = False
-			bird.theta = bird.velocidade * -2
+			bird.angle = bird.velocidade * -2
 	
 		if bird.rect.bottom >= altura_tela:
 			velocidade = 0
@@ -72,6 +72,8 @@ while rodando:
 				if bird.rect.left > c.rect.right:
 					acerto_cano = False
 					pontuacao += 1
+					if pontuacao > pontuacao_recorde:
+						pontuacao_recorde = pontuacao
 					som_acerto.play()
 
 	if not bird.vivo:
