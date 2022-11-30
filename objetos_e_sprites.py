@@ -100,7 +100,7 @@ class Placar:
 			self.rect.topleft = self.x - 15 * len(placar) + 30 * frame, self.y
 			self.window.blit(self.image, self.rect)
 
-# Classe que representa os canos (obstaculos)
+# Classe que representa os canos (obstáculos)
 class Cano(sprite.Sprite):
 	def __init__(self, window, image, y, posicao):
 		super(Cano, self).__init__()
@@ -117,13 +117,42 @@ class Cano(sprite.Sprite):
 		elif posicao == -1:
 			self.rect.topleft = (x, y + gap_cano)
 
+	# Atualização dos canos
 	def update(self, velocidade):
 		self.rect.x -= velocidade
 		if self.rect.right < 0:
-			self.morto()
+			self.kill()
 		self.window.blit(self.image,  self.rect)
+
+# Classe que representa o chão
+class Base:
+	def __init__(self, window):
+		self.window = window
+
+		self.image1 = image.load('Assets/base.png')
+		self.image2 = self.image1
+		self.rect1 = self.image1.get_rect()
+		self.rect1.x = 0
+		self.rect1.y = int(altura_tela)
+		self.rect2 = self.image2.get_rect()
+		self.rect2.x = WIDTH
+		self.rect2.y = int(altura_tela)
+	
+	# Atualização do terreno
+	def update(self, velocidade):
+		self.rect1.x -= velocidade
+		self.rect2.x -= velocidade
+		
+		if self.rect1.right <= 0:
+			self.rect1.x = WIDTH - 5
+		if self.rect2.right <= 0:
+			self.rect2.x = WIDTH - 5
+
+		self.window.blit(self.image1, self.rect1)
+		self.window.blit(self.image2, self.rect2)
 
 # Variáveis dos objetos e sprites
 grupo_canos = sprite.Group()
 bird = Bird(window)
 imagem_placar = Placar(WIDTH // 2, 50, window)
+base = Base(window)
