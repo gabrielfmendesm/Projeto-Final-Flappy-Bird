@@ -15,7 +15,7 @@ clock = time.Clock()
 display.set_caption('Flappy Bird')
 
 # Simbolo PyGame
-programIcon = image.load('Assets/icone.jpg')
+programIcon = image.load('Assets/icone.ICO')
 display.set_icon(programIcon)
 
 
