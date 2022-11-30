@@ -33,7 +33,7 @@ class Bird:
 			if mouse.get_pressed()[0] == 1 and not self.pulo:
 				som_asa.play()
 				self.pulo = True
-				self.velocidade = -6
+				self.velocidade = -5
 			if mouse.get_pressed()[0] == 0:
 				self.pulo = False
 			
@@ -110,14 +110,14 @@ class Cano(sprite.Sprite):
 		self.window = window
 		self.image = image
 		self.rect = self.image.get_rect()
-		gap_cano = 100 // 2
+		espaco_cano = 100 // 2
 		x = WIDTH
 
 		if posicao == 1:
 			self.image = transform.flip(self.image, False, True)
-			self.rect.bottomleft = (x, y - gap_cano)
+			self.rect.bottomleft = (x, y - espaco_cano)
 		elif posicao == -1:
-			self.rect.topleft = (x, y + gap_cano)
+			self.rect.topleft = (x, y + espaco_cano)
 
 	# Atualização dos canos
 	def update(self, velocidade):
