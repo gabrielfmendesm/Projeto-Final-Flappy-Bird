@@ -66,32 +66,32 @@ while rodando:
 	
 		if len(grupo_canos) > 0:
 			c = grupo_canos.sprites()[0]
-			if bird.rect.left > c.rect.left and bird.rect.right < c.rect.right and not cano_passado and bird.vivo:
-				cano_passado = True
+			if bird.rect.left > c.rect.left and bird.rect.right < c.rect.right and not acerto_cano and bird.vivo:
+				acerto_cano = True
 	
-			if cano_passado:
+			if acerto_cano:
 				if bird.rect.left > c.rect.right:
-					cano_passado = False
+					acerto_cano = False
 					pontuacao += 1
 					som_acerto.play()
 
 	if not bird.vivo:
 		window.blit(gameover, (50,200))
 		
-	for event in event.get():
-		if event.type == QUIT:
-			running = False
-		if event.type == KEYDOWN:
-			if event.key == K_ESCAPE or \
-				event.key == K_q:
-				running = False
-		if event.type == MOUSEBUTTONDOWN:
-			if tela_inicio_jogo:
+	for e in event.get():
+		if e.type == QUIT:
+			rodando = False
+		if e.type == KEYDOWN:
+			if e.key == K_ESCAPE or \
+				e.key == K_q:
+				rodando = False
+		if e.type == MOUSEBUTTONDOWN:
+			if tela_de_inicio:
 				inicio_jogo = True
 				velocidade = 2
-				tela_inicio_jogo = False
+				tela_de_inicio = False
 
-				game_over = False
+				fim_jogo = False
 				ultimo_cano = time.get_ticks() - frequencia_cano
 				proximo_cano = 0
 				grupo_canos.empty()
