@@ -2,10 +2,9 @@
 # ----- Importa e inicia pacotes
 from pygame import *
 from random import *
-from config import *
 from assets import *
+from config import *
 from objetos_e_sprites import *
-
 
 init()
 mixer.init()
