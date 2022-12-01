@@ -43,7 +43,7 @@ O objetivo principal em Flappy Bird é clicar com o botão do mouse para guiar o
 
 * A pontuação só será contada caso o jogador passe com o personagem entre os canos (sendo a única maneira dele se manter vivo), caso contrário ele perderá o jogo;
     
-* A cada passada por entre os canos, a pontuação do jogador aumenta e ao final de cada jogada, e mostrado a pontuação final do jogador.
+* A cada passada por entre os canos, a pontuação do jogador aumenta e ao final de cada jogada, é mostrado a pontuação final do jogador.
 
  ## Outras Informações
  
