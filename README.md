@@ -35,7 +35,7 @@ pip install pygame
 
 ## Instruções do Jogo
 
-O objetivo principal em Flappy Bird é clicar com o botão do mouse para guiar o personagem por entre os canos que aparecerem. A cada clicada, o personagem voa para cima elevendo a sua altura e possibilitando a passagem pelo meio dos canos, caso o jogador não clique no mouse, o personagem irá parar de voar e começará a cair. Além das instruções básicas, existem algumas regras:
+O objetivo principal em Flappy Bird é clicar com o botão do mouse para guiar o personagem por entre os canos que aparecerem. A cada clicada, o personagem voa para cima elevendo a sua altura e possibilitando a passagem pelo meio dos canos, caso o jogador não clique no mouse, o personagem irá parar de voar e começará a cair. Além das instruções básicas, existem algumas regras e informações:
 
 * Caso o personagem toque em qualquer parte dos canos, falhando em passar pelo meio, o jogador perderá o controle do personagem e uma tela de Game Over aparecerá;
 
@@ -43,7 +43,7 @@ O objetivo principal em Flappy Bird é clicar com o botão do mouse para guiar o
 
 * A pontuação só será contada caso o jogador passe com o personagem entre os canos (sendo a única maneira dele se manter vivo), caso contrário ele perderá o jogo;
     
-* A cada passada por entre os canos, a pontuação do jogador aumenta e ao final de cada jogada, a jogada com maior pontuação fica guardada para outros tentarem bate-la.
+* A cada passada por entre os canos, a pontuação do jogador aumenta e ao final de cada jogada, e mostrado a pontuação final do jogador.
 
  ## Outras Informações
  
