@@ -47,7 +47,7 @@ O objetivo principal em Flappy Bird é clicar com o botão do mouse para guiar o
 
  ## Outras Informações
  
- Vídeo de Demonstração do Jogo: 
+ Vídeo de Demonstração do Jogo: https://youtu.be/cbsTLfmBmMQ.
 
  Referências do jogo: Utilizamos as imagens, sprites e áudios do seguinte repositório a baixo no jogo.
  
